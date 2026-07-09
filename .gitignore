@@ -1,0 +1,12 @@
+# Pastas de build e binários
+firmware/**/build/
+firmware/**/bin/
+firmware/**/sdkconfig
+
+# Ambiente virtual e cache Python
+research_workspace/.venv/
+__pycache__/
+*.pyc
+
+# Configurações pessoais
+.vscode/

@@ -1,0 +1,54 @@
+PARA TIRAR OS RASBISCOS DO CODIGO:
+
+ESP-IDF: Generate compile_commands.json
+
+----------------------------------------------------------
+
+PERMISSÃO PARA ASS PORTAS:
+
+sudo chmod a+rw /dev/ttyACM0
+
+----------------------------------------------------------
+
+
+
+2. Sincronize os Caminhos no VS Code
+Vamos garantir que a IDE aponte para o diretório correto desta vez.
+
+    Pressione F1 (ou Ctrl+Shift+P).
+
+    Digite e selecione: ESP-IDF: Add vscode configuration folder.
+    (Isso cria ou atualiza a pasta oculta .vscode dentro do active_sta com os caminhos exatos do seu computador).
+    
+-------------------------------------------------------------------
+
+ESP_WIFI_PASSWORD: mypassword
+
+
+---------------------------------------------------------------
+
+
+Após terminar a instalação:
+
+Assim que o comando acima finalizar, tente repetir os passos que estávamos fazendo:
+
+    Ative as variáveis de ambiente:
+    Bash
+
+    source /home/ana-ribeiro/.espressif/v6.0.2/esp-idf/export.sh
+
+    (Agora deve aparecer "Done! You can now compile ESP-IDF projects.")
+
+    Compile e grave direto na placa:
+    Bash
+
+    idf.py build flash -p /dev/ttyACM0	
+    
+ 
+---------------------------------------------------------------
+    
+    Para desativar (venv_visao): deactivate
+   
+
+    Para reativar (venv_visao): source /home/ana-ribeiro/visao_computacional/venv_visao/bin/activate
+
